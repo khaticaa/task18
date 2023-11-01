@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif, Georgia, Times, "Times New Roman", serif;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0px 32px;
+}
+
+#section1 {
+  width: 100%;
+}
+#section1 .section1ortalama {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 49px;
+}
+#section1 .s1text {
+  margin-left: 70px;
+  background-color: rgb(255, 209, 124);
+  width: 30%;
+  font-size: 22px;
+  padding: 20px 30px;
+}
+#section1 .s1text h6 {
+  color: red;
+}
+#section1 .s1text p {
+  font-size: 30px;
+  color: darkblue;
+  font-weight: bolder;
+  width: 100%;
+}
+#section1 .cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  overflow: hidden;
+}
+#section1 .cards .card {
+  width: 100%;
+}
+#section1 .cards .card .img {
+  position: relative;
+}
+#section1 .cards .card .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section1 .cards .card .img .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: absolute;
+  padding: 15px 15px;
+  background-color: #fb5849;
+}
+#section1 .cards .card .img .top span {
+  color: white;
+  font-weight: bold;
+}
+#section1 .cards .card .img .bottom {
+  padding: 15px 15px;
+  bottom: 0px;
+  position: absolute;
+  background-color: #fb5849;
+  width: 100%;
+  color: white;
+}
+
+#section2 {
+  width: 100%;
+  padding: 40px 0px;
+}
+#section2 .section2ortalama {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#section2 .section2ortalama .s2left {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+#section2 .section2ortalama .s2left .s2text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#section2 .section2ortalama .s2left .s2text h5 {
+  color: #fb5849;
+  font-size: 22px;
+}
+#section2 .section2ortalama .s2left .s2text h2 {
+  font-size: 33px;
+  font-weight: 900;
+  width: 60%;
+}
+#section2 .section2ortalama .s2left .s2text p {
+  font-size: 19px;
+  width: 85%;
+}
+#section2 .section2ortalama .imgs {
+  display: flex;
+  gap: 30px;
+}
+#section2 .section2ortalama .s2right {
+  width: 40%;
+  position: relative;
+}
+#section2 .section2ortalama .s2right img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#section2 .section2ortalama .s2right i {
+  position: absolute;
+  font-size: 60px;
+  color: #fb5849;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#section3 {
+  background-image: url("img/reservation-bg.jpg");
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+#section3 .s3left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+#section3 .s3left .title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+}
+#section3 .s3left .title h2 {
+  font-size: 40px;
+}
+#section3 .s3left .title p {
+  font-size: 20px;
+}
+#section3 .s3left .texts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+#section3 .s3left .texts .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(138, 92, 92);
+  padding: 20px 40px;
+  gap: 3px;
+  border-radius: 10px;
+}
+#section3 .s3left .texts i {
+  position: absolute;
+  color: #fff;
+  background: #fb5849;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  top: -30px;
+}
+#section3 .s3right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+  border-radius: 7px;
+}
+#section3 .s3right .form {
+  padding: 12px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#section3 .s3right .form input {
+  width: 100%;
+  border: solid 1px rgb(194, 185, 185);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+#section3 .s3right textarea {
+  width: 80%;
+  border: solid 1px rgb(194, 185, 185);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+#section3 .s3right button {
+  border-radius: 5px;
+  width: 80%;
+  background: #fb5849;
+  padding: 10px 0px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #section1 .section1ortalama .s1text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  #section1 .section1ortalama .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #section2 .section2ortalama {
+    flex-direction: column;
+  }
+  #section2 .section2ortalama .s2left {
+    width: 100%;
+  }
+  #section2 .section2ortalama .s2right {
+    width: 100%;
+  }
+  #section3 {
+    flex-direction: column;
+  }
+  #section3 .s3left {
+    width: 100%;
+  }
+  #section3 .s3left .texts {
+    flex-direction: column;
+  }
+  #section3 .s3left .texts .text {
+    width: 100%;
+  }
+  #section3 .s3right {
+    width: 100%;
+  }
+  #section3 .s3right .form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
